@@ -101,6 +101,6 @@ Ext.define('PWA.view.main.MainController', {
     },
 
     onBackTap: function() {
-        this.redirectTo(-1);
+        this.redirectTo('home');
     },
 });
