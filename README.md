@@ -1,22 +1,18 @@
 # PWA
 
-A demo of the Progressive Web App support in Ext JS 6.5 and Sencha Cmd 6.5.
+A demo of the Progressive Web App support using Ext JS 6.5 and open tooling.
 
 ## To run
 
-You will need to download [Sencha Ext JS](https://www.sencha.com/products/extjs). We
-recommend extracting Ext JS into a `"sencha-sdks"` folder in your home directory.
-
-Once Ext JS is extracted, run these commands:
+Run these commands:
 
     cd client
-    sencha app install ~/sencha-sdks
-    sencha app build --dev
+    npm install
+    npm start
     cd ../server
     npm install
     npm start
 
-On Windows the "~" part of the path will be replaced by something like "C:\Users\Me\".
 
 You should now be able to point your browser to [http://localhost:8082/](http://localhost:8082/).
 
@@ -25,9 +21,9 @@ You should now be able to point your browser to [http://localhost:8082/](http://
 To run a production build, run these commands:
 
     cd client
-    sencha app build
+    npm run production
     cd ../server
-    NODE_ENV=production npm start
+    ENV=production npm start
 
 This will run a production build and start the server with a path to the production build.
 You should now be able to point your browser to [http://localhost:8082/](http://localhost:8082/).

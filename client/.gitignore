@@ -1,0 +1,4 @@
+/node_modules
+/build
+/bootstrap*
+/index.js*
