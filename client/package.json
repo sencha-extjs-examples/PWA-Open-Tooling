@@ -5,7 +5,8 @@
   "description": "PWA Demo Application",
   "scripts": {
     "clean": "rimraf build",
-    "start": "cross-env-shell webpack-dev-server --env.environment=desktop"
+    "start": "cross-env-shell webpack-dev-server --env.environment=desktop",
+    "production": "npm run clean && cross-env-shell webpack --env.environment=production --env.treeshake=true"
   },
   "extbuild": {
     "defaultprofile": "desktop",
