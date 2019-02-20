@@ -9,13 +9,21 @@ A demo of the Progressive Web App support using Ext JS 6.7 and open tooling.
 
 ## To run
 
-Run these commands:
+Install dependencies:
 
     cd client
     npm install
-    npm start
     cd ../server
     npm install
+
+Run the client in dev mode (watching for changes):
+
+    cd client
+    npm start
+
+Run the server in dev mode (separate terminal):
+
+    cd server
     npm start
 
 
